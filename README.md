@@ -1,4 +1,5 @@
 # Junioprojeto
+
  primeiro repositório
 
 ## Tarefas
@@ -10,4 +11,4 @@ O controle das tarefas desse projeto será reaçizado no GitHub.
 :packange: Nova funcionalidade
 :up: Atualização
 :beatle: Correção de bug
-:checkered: Release
+:checkered_flag: release
