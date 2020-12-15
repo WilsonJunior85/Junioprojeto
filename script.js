@@ -1,4 +1,7 @@
 
+alert("Bem vindo(a) ao Studio Bruna Ferreira.");
+
+
 var menu1 = document.querySelector(".menu1");     /* criando uma variavel e buscando o menu1 */
 
 /* Adicionar o evento addEventListener que vai ficar escutando o evento de click */
@@ -9,3 +12,21 @@ var sidebar = document.querySelector(".container").classList.toggle("show-menu")
 
 
 });
+
+function Enviar(){
+    let nome1 = document.querySelector('#nome').Value;
+    let email1  = document.querySelector('#email').Value;
+    let mensagem1 = document.querySelector('#mensagem').Value;
+    let res = document.querySelector('#res').Value;
+    
+     
+    if( nome1 == "" || email1 == "" || mensagem1 == "" ) {
+    alert ("Favor preencha todos os campos");
+    
+    }else {
+
+        document.querySelector('#res').innerHTML = ` Olá ${res} Funcionou!`;
+
+    } 
+    return 0;
+}
