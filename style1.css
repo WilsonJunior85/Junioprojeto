@@ -521,9 +521,97 @@ top: 0;  /* Quando você clicar no campo o nome que está no campo, sobe */
     color: #eee;
     text-transform: uppercase;
     border-radius: none;
-    
+    }
+ /* Conteúdo orçamento */    
+ .sessao-orcamento {
+ width: 100%;    /* Largura da página */
+ height: 100vh;  /* Altura da Vwer */
+ background: url("imagens/Capaformulario.jpg");
+ object-fit: cover;  /* Para cobrir a area */
+ display: flex;  /* Posicionando no meio o menu orcamento */
+ justify-content: center;  /* Posicionando no meio o menu orcamento */
+ align-items: center;  /* Posicionando no meio o menu orcamento */
 
 }
+
+
+/* Conteúdo orçamento */  
+.orcamento-wrapper {
+    width: 60%;
+    height: 80%;
+    background-color: #ffffff;
+    opacity: 0.8;
+    border-radius: 10px;
+    box-shadow:  0 0.1rem 0.3rem ;
+    position: relative;
+}
+
+/* Conteúdo orçamento */  
+.sessao-orcamento  h1 {
+position: absolute;
+top: -2.5rem;
+left: 2rem;
+background: #ef32d9;   /* Cor do elemento botão */
+background: -webkit-linear-gradient(to right, #ef32d9, #89fffd);  /* Cor do elemento botão */
+background: linear-gradient(to right, #ef32d9, #89fffd);   /* Cor do elemento botão */
+padding: 0 3rem;  /* 0 em cima e 0 em baixo e 3 na direito e 3 na esquerda */
+color: #fff ;
+font-family: var(--font-primary);
+font-size: 3rem;  /* Tamanho da letra */
+font-weight: lighter;   /* Tirando um pouco do peso da letra */
+box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);  /* Sombra da caixa */
+}
+
+
+
+
+/* Conteúdo orçamento */  
+.sessao-orcamento form {
+margin: 4rem;
+display: grid; /* Torna o elemento um grid container. */
+grid-template-columns: auto 1fr ; /* Configurando pra ter 2 colunas */
+column-gap: 2rem; /* ESpaçameto entre as colunas */
+row-gap: 1rem;  /* ESpaçamento entre as linhas */
+}
+
+
+
+/* Conteúdo orçamento */ 
+.sessao-orcamento label {
+font-family: var(--font-secundary);  /* Fonte do texto do orçamento */
+font-size: 1.5rem; /* Tamanho da fonte */
+font-weight: bold;  /* Peso da fonte */
+}
+
+/* Conteúdo orçamento */ 
+.sessao-orcamento input[type="number"]{
+font-family: var(--font-secundary); /* fonte do input */
+width: 4rem; /* Largura do input */
+font-size: 2rem; /* Tamanho da fonte */
+outline: none;            /* Tirar a borda quando vc clica dentro da caixa */
+border-radius: 10px ;   /* Arredondando um pouco a borda */
+padding: 0.3rem;      /* Espaçamento dos números dentro da caixa */
+
+
+}
+
+.btn-btn-orcamento {
+    text-transform: uppercase;  /* Todas as letras maiúsculas */
+    height: 200%;  /* Altura do botão enviar */
+    width: 80%;  /* Largura do botão enviar */
+    padding: 1rem;
+    cursor: pointer;
+    background: #ef32d9;   /* Cor do elemento botão */
+    background: -webkit-linear-gradient(to right, #ef32d9, #89fffd);  /* Cor do elemento botão */
+    background: linear-gradient(to right, #ef32d9, #89fffd);   /* Cor do elemento botão */
+    padding: 0 3rem;  /* 0 em cima e 0 em baixo e 3 na direito e 3 na esquerda */
+    color: #fff ;
+    grid-column: 2;  /* Posição do botão enviar vai ficar na coluna 2 */
+    
+
+
+}
+
 
 .card-info {
 opacity: 0;
@@ -536,3 +624,5 @@ transition: all .3s; /* Efeito das letras aparecendo e subindo dentro do element
 visibility: hidden;
 text-shadow: 0.0.1rem 0.3rem rgba(0, 0, 0, rgba(0, 0, 0, .4) /* Colocando uma sombra nas letras do elemento card */
 }
+
+
