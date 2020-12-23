@@ -377,6 +377,7 @@ opacity: 0.50;
     font-size: 2rem;
     font-weight: 500;
     color: #eee;
+    font-weight: bold;  /* Peso da fonte */
 }
 
 .card-info p {
@@ -591,10 +592,10 @@ font-size: 2rem; /* Tamanho da fonte */
 outline: none;            /* Tirar a borda quando vc clica dentro da caixa */
 border-radius: 10px ;   /* Arredondando um pouco a borda */
 padding: 0.3rem;      /* Espaçamento dos números dentro da caixa */
-
-
 }
 
+
+/* Conteúdo orçamento */ 
 .btn-btn-orcamento {
     text-transform: uppercase;  /* Todas as letras maiúsculas */
     height: 200%;  /* Altura do botão enviar */
@@ -607,9 +608,53 @@ padding: 0.3rem;      /* Espaçamento dos números dentro da caixa */
     padding: 0 3rem;  /* 0 em cima e 0 em baixo e 3 na direito e 3 na esquerda */
     color: #fff ;
     grid-column: 2;  /* Posição do botão enviar vai ficar na coluna 2 */
-    
+}
 
+footer {
+width: 100%;  /* Largura de 100% do footer */
+height: 7rem;     /* Altura de 10 */
+background-color: #17181b;  /* Cor de fundo do footer */
+display: flex;  /* Posicionando os elementos */
+justify-content: center;  /* Alinhar todos eles  tanto na horizontal*/
+align-items: center;      /* Alinhar todos eles  tanto na vertical*/
+}
 
+.footer-content {
+width: 60%;  /* Largura */
+display: flex;  /* Posicionando os elementos */
+justify-content: space-between;  /* Espaçamento dos elementos bem distantes */
+}
+
+.footer-content p {
+font-family: var(--font-secundary); /* Fonte do parágrafo */
+color: #a7a7a7 ;  /* Cor do parágrafo */
+font-size: 1.2rem;  /* Tamanho da fonte do parágrafo */
+}
+
+.social-list a{
+margin: 0 2rem;
+color: #a7a7a7 ;
+font-size: 1.3rem;
+}
+ .social-list ul {
+display: flex;  /* Posicionando os elementos */
+
+ }
+
+ #link-topo {
+position: fixed; /* Posição fixa , vai aparecer sempre na página */
+right: 3rem;   /* E vai estar sempre a direita */
+bottom: 3rem;  /* Tamanho do botão */
+width: 2rem;   /* Largura */
+height: 2rem;  /* Altura */
+background: #ef32d9;   /* Cor do elemento botão */
+ background: -webkit-linear-gradient(to right, #ef32d9, #89fffd);  /* Cor do elemento botão */
+background: linear-gradient(to right, #ef32d9, #89fffd);   /* Cor do elemento botão */
+display: flex;  /* Posicionando os elementos */
+justify-content: center;  /* Alinhar todos eles  tanto na horizontal*/
+align-items: center;    /* Alinhar todos eles  tanto na vertical*/
+color: white;
+border-radius: 3rem;  /* Arredondar a borda */
 }
 
 

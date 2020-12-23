@@ -1,5 +1,5 @@
 
-alert("Bem vindo(a) ao Studio Bruna Ferreira.");
+
 
 
 var menu1 = document.querySelector(".menu1");     /* criando uma variavel e buscando o menu1 */
@@ -29,4 +29,25 @@ function Enviar(){
 
     } 
     return 0;
+}
+
+function saibamais(){
+
+location.href="index2.html"
+
+}
+
+function orcamento(){
+
+    location.href="orcamento.html"
+}
+
+function videos(){
+    location.href="video.html"
+
+}
+
+function contato (){
+location.href="contato.html"
+
 }
