@@ -9,9 +9,10 @@ menu1.addEventListener("click", function() {
 /* Criando uma variável com elemento sidebar, apartir da lista de classe add ou remover uma classe chamada show-menu */
 var sidebar = document.querySelector(".container").classList.toggle("show-menu");
 
-
-
 });
+
+
+/*------------------------------------- Função do formulário e-mail --------------------------------------*/
 
 function Enviar(){
     let nome1 = document.querySelector('#nome').Value;
@@ -30,6 +31,8 @@ function Enviar(){
     } 
     return 0;
 }
+
+/* _____________________________________Redirecionamento de páginas_____________________________________________*/
 
 function saibamais(){
 
@@ -51,3 +54,49 @@ function contato (){
 location.href="contato.html"
 
 }
+
+function fotos(){
+location.href="Fotos.html"
+
+}
+
+/*________________________________________Formulário___________________________________________________________________*/
+
+document.querySelector("#qtde").addEventListener("change", atualizarPreco);
+document.querySelector("#js").addEventListener("change", atualizarPreco);
+document.querySelector("#layout-sim").addEventListener("change", atualizarPreco);
+document.querySelector("#layout-nao").addEventListener("change", atualizarPreco);
+document.querySelector("#prazo").addEventListener("change", function (){
+const prazo = document.querySelector("#prazo").value;   
+document.querySelector("label[for=prazo]").innerHTML = `Prazo: ${prazo} semanas`;
+atualizarPreco()
+});
+function atualizarPreco(){
+ 
+ let quantidade = document.querySelector("#qtde").value;
+ const TemOrcamento = document.querySelector("#js").checked;
+ let preco = document.querySelector("#preco").value;
+ const incluiLayout = document.querySelector("#layout-sim").checked;
+ const incluiLayout2 = document.querySelector("#layout-nao").checked;
+ const prazo = document.querySelector("#prazo").value;
+ preco = quantidade * 100;
+ if(TemOrcamento){
+preco = preco + (preco * 10/100);
+
+ }
+ if (incluiLayout || incluiLayout2){
+     preco = preco + 100
+ }
+ document.querySelector("#preco").innerHTML = `${preco.toFixed(2)}`;
+
+
+}
+
+
+
+
+
+
+
+
+    

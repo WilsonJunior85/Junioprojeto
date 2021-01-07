@@ -16,8 +16,8 @@
         <div class="orcamento-wrapper">
             <h1>Faça um orçamento</h1>
             <form>
-                <label for="qtde">Escolha a data do Mês</label>
-                <input type="number" min="1" name="qtde" id="dtde">
+                <label for="qtde">Escolha a quantidade de procedimentos</label>
+                <input type="number" min="1" name="qtde" id="qtde" onclick="atualizarPreco()">
                 <label for="js">Preciso de um orçamento</label>
                 <input type="checkbox" name="js" id="js">
                 <label>Procedimento</label>
@@ -32,8 +32,11 @@
                     </div>
                 </div>
                   <label for="prazo">Prazo</label>
-                  <input type="range" name="prazo" id="prazo">
-                  <button class="btn-btn-orcamento" type="submit">Enviar</button>
+                  <input type="range" name="prazo" id="prazo" min="1" max="10">
+                  <label id="preco">R$ 0,00</label>
+                   
+                  <button class="btn-btn-orcamento" type="submit" onclick="enviar2()">Enviar</button>
+                  <div id="resu"></div>
             </form>
            </div>
     </section>
