@@ -3,7 +3,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 
 
-/* Remove as margens do site*/
+/* Remove as margens do site de todos os elementos*/
 *{
 margin: 0;
 padding: 0;
@@ -20,6 +20,7 @@ text-decoration: none; /*Retira os sublinhados dos nomes */
 html {
     scroll-behavior: smooth; /* o scrool da barra de rolagem fica mais suave */
 }
+
 
 
 .menu1 {
@@ -143,6 +144,7 @@ margin-bottom: 2rem; /* Margem do botão */
 opacity: 0;
 animation: moveBanner 1s 0.7s forwards;  /* Chamado a animação do titulo */
 }
+
 
 .banner button {
 font-family: var(--font-action); /* fonte escolhida */

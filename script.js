@@ -36,13 +36,8 @@ function Enviar(){
 
 function saibamais(){
 
-location.href="index2.html"
+location.href="saibamais.html"
 
-}
-
-function orcamento(){
-
-    location.href="orcamento.html"
 }
 
 function videos(){
@@ -60,7 +55,25 @@ location.href="Fotos.html"
 
 }
 
-/*________________________________________Formulário___________________________________________________________________*/
+
+
+
+
+/* ____________________________________________________Script dos videos___________________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*________________________________________Formulário___________________________________________________________________
 
 document.querySelector("#qtde").addEventListener("change", atualizarPreco);
 document.querySelector("#js").addEventListener("change", atualizarPreco);
@@ -92,7 +105,7 @@ preco = preco + (preco * 10/100);
 
 }
 
-
+*/
 
 
 
